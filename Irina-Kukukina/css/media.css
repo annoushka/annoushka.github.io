@@ -61,9 +61,6 @@
         margin-top: 70px;
     margin-bottom: 45px;
     }
-    p {
-        text-align: left;
-    }
     .h-1 {
         font-size: 26px;
     }
@@ -127,6 +124,10 @@
     .center {
         font-size: 23px;
     }
+    .color-change-4x {
+        -webkit-animation: none;
+	        animation: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -155,18 +156,23 @@
     .works img {
         margin: 0 auto;
     }
-    p {
-        text-align: left;
-    }
     .center {
     font-size: 29px;
     margin-top: 150px;
     margin-bottom: 105px;
     }
+    .mobile-title {
+    font-size: 30px;
+    line-height: 38px;
+    }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+.color-change-4x {
+        -webkit-animation: color-change-4x 15s linear infinite alternate both;
+	        animation: color-change-4x 15s linear infinite alternate both;
+    }
 .nav {
         display: block !important;
     }
@@ -176,6 +182,7 @@
     p {
         font-size: 17px;
         text-align: right;
+        margin-bottom: 37px;
     }
     .nav li a {
     font-size: 28px;
@@ -190,6 +197,9 @@
     
     .center {
         font-size: 48px;
+    }
+    .additional {
+        font-size: 14px;
     }
 }
 
