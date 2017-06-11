@@ -163,7 +163,7 @@ img {
 
 .additional {
   color: #fff;
-  text-align: left;
+  text-align: justify;
   position: relative;
   width: 430px;
   padding-left: 5px;
@@ -247,23 +247,24 @@ img {
     color: white;
     height: 29px;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 29px;
 }
 .mobile-header>a {
-    display:inline-block; 
-    width:100%; 
-    text-align:center;  
+    display: inline-block; 
+    width: 100%; 
+    text-align: center;  
     color:white !important;
     vertical-align: sub;
 }
 .navbar-toggle {
     background-color: transparent;
-    font-size: 25px;
+    height: 29px;
     border: medium none;
     position: absolute;
-    right: 5px;
+    right: 0;
     top: 0;
     cursor: pointer;
+    padding-right: 1rem;
 }
 .nav li a {
     font-size: 34px;
@@ -297,7 +298,6 @@ line-height: 23px;
 text-decoration: none;
 color: #121212;
 margin-right: 25px;
-transition: all .25s;
     z-index: 11;
 }
 .main_nav ul .hover:hover {
