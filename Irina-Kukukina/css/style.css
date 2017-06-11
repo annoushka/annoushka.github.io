@@ -108,7 +108,7 @@ img {
     width: 900px;
 }
 .h-1 {
-    font-size: 43px;
+    font-size: 44px;
     font-weight: 400;
     line-height: 54px;
     color: black;
@@ -166,7 +166,6 @@ img {
   text-align: justify;
   position: relative;
   width: 430px;
-  padding-left: 5px;
   background-color: #8DA2AE;
   display: none;
   left: 20px;
@@ -176,6 +175,7 @@ img {
     border-radius: 15px;
     padding: 10px;
 }
+
 
 .info {
   position: absolute;
