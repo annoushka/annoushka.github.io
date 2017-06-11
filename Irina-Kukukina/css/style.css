@@ -245,9 +245,9 @@ img {
     width: 100%; 
     text-align: center;  
     color: white;
-    height: 29px;
+    height: 40px;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 40px;
 }
 .mobile-header>a {
     display: inline-block; 
@@ -258,7 +258,7 @@ img {
 }
 .navbar-toggle {
     background-color: transparent;
-    height: 29px;
+    height: 40px;
     border: medium none;
     position: absolute;
     right: 0;
