@@ -14,13 +14,6 @@ $(document).ready(function() {
 	var owl = $(".carousel");
 	owl.owlCarousel({
 		items : 4,
-        nav : true,
-        smartSpeed : true,
-        touchDrag :false,
-        loop :true,
-        autoplay :true,
-        autoplayTimeout :1000,
-        autoplayHoverPause :true
 	});
 	owl.on("mousewheel", ".owl-wrapper", function (e) {
 		if (e.deltaY > 0) {
