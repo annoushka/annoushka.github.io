@@ -1,0 +1,222 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .h-1 {
+        font-size: 36px;
+}
+    .left {
+    margin-top: 0px;
+}
+    .main_nav {
+	padding-top: 0;
+    }
+    .navbar-nav {
+        display: none;
+        background-color: white;
+        position: absolute;
+        top: 29px;
+        left: 0;
+        width: 100%;
+        height: 100vh !important;
+        z-index: 200;
+        padding-top: 50px;
+    }
+  
+    .navbar-nav li {
+        display: block !important;
+        padding: 15px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+    }
+     .navbar-nav li a {
+        font-size: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        letter-spacing: 1px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .more {
+        display: none;
+    }
+    .right {
+        position: absolute;
+    }
+    .top {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .center {
+        font-size: 29px;
+        margin-top: 70px;
+    margin-bottom: 45px;
+    }
+    .h-1 {
+        font-size: 26px;
+    }
+    .name {
+        width: auto;
+    }
+    .left {
+    margin-top: 0px;
+}
+    .e-mail {
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .mobile-header {
+    font-size: 15px;
+    }
+    p {
+    font-size: 14px;
+    }
+    td {
+    padding: 15px 10px !important;
+    font-size: 14px;
+}
+    footer a, .copy {
+       display: none;
+    }
+    .top {
+    padding-top: 20px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+.nav {
+        display: none;
+    }
+     .navbar-nav {
+        display: none;
+    }
+    .more {
+        display: none;
+    }
+    .top {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .right {
+        position: absolute;
+    }
+    .works img {
+        width: 100%;
+    }
+    .center {
+        font-size: 23px;
+    }
+    .color-change-4x {
+        -webkit-animation: none;
+	        animation: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.nav {
+        display: none;
+    }
+     .navbar-nav {
+        display: none;
+    }
+    .more {
+        display: none;
+    }
+    .top {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    .right {
+        position: absolute;
+    }
+    .works img {
+        margin: 0 auto;
+    }
+    .center {
+    font-size: 29px;
+    margin-top: 150px;
+    margin-bottom: 105px;
+    }
+    .mobile-title {
+    font-size: 30px;
+    line-height: 38px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.color-change-4x {
+        -webkit-animation: color-change-4x 15s linear infinite alternate both;
+	        animation: color-change-4x 15s linear infinite alternate both;
+    }
+.nav {
+        display: block !important;
+    }
+     .navbar-nav {
+        display: block !important;
+    }
+    p {
+        font-size: 17px;
+        text-align: right;
+    }
+    .nav li a {
+    font-size: 28px;
+    letter-spacing: 1px;
+    }
+    .main_nav ul li:first-child {
+    margin-left: 50px;
+}
+    .more {
+        display: inline !important;
+    }
+    
+    .center {
+        font-size: 48px;
+    }
+    .additional {
+        font-size: 14px;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+    .additional {
+        width: 580px;
+  bottom: 480px;
+        font-size: 20px;
+    }
+    p {
+        font-size: 20px;
+    }
+    .nav li a {
+    font-size: 33px;
+    }
+}
