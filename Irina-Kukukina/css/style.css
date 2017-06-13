@@ -13,31 +13,31 @@
  */
 @-webkit-keyframes color-change-4x {
   0% {
-    background: #FFFDA1;
+    background: #ACAAC4;
   }
   33.3333% {
-    background: #3AC488;
+    background: #A3B8AB;
   }
   66.666% {
-    background: #71C7FF;
+    background: #D6DBB6;
   }
   100% {
-    background: #AD9DC5;
+    background: #79A68A;
   }
 }
 @keyframes color-change-4x {
   0% {
-    background: #FFFDA1;
+    background: #ACAAC4;
   }
   33.3333% {
-    background: #3AC488;
+    background: #A3B8AB;
   }
   66.666% {
-    background: #71C7FF;
+    background: #D6DBB6;
   }
   100% {
-    background: #AD9DC5;
-    }
+    background: #79A68A;
+  }
 }
 
 
@@ -257,7 +257,7 @@ img {
     width: 100%; 
     text-align: center;  
     color:white !important;
-    vertical-align: middle;
+    vertical-align:middle;
 }
 .navbar-toggle {
     background-color: transparent;
@@ -346,13 +346,14 @@ margin-right: 25px;
 
 footer {
     margin-top: 180px;
-    margin-bottom: 50px;
-    color: #b2b2b2;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
     font-size: 11px;
 line-height: 23px;
 }
 footer a {
-    color: #b2b2b2 !important;
+    color: #fff !important;
     font-size: 16px;
 }
 footer i {
