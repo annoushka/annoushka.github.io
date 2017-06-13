@@ -171,8 +171,7 @@ img {
   left: 20px;
   bottom: 455px;
   z-index: 100;
-  border: 6px solid #000;
-    border-radius: 10px;
+  border: 2px solid #000;
     padding: 10px;
     padding-right: 15px;
 }
