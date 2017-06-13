@@ -42,6 +42,9 @@
         vertical-align: middle;
         letter-spacing: 1px;
     }
+	footer, footer a {
+        color: #121212 !important;
+    }
 }
 
 /* Small Devices, Tablets */
