@@ -7,9 +7,6 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-    .h-1 {
-        font-size: 36px;
-}
     .left {
     margin-top: 0px;
 }
@@ -63,9 +60,6 @@
         font-size: 29px;
         margin-top: 70px;
     margin-bottom: 45px;
-    }
-    .h-1 {
-        font-size: 26px;
     }
     .name {
         width: auto;
