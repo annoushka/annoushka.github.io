@@ -1,11 +1,3 @@
-@keyframes slideInRight {
-  from { right: -1180px; }
-    to { right: 0; }
-}
-@keyframes slideInLeft {
-  from { left: -1180px; }
-    to { left: 0; }
-}
 /*
  * ----------------------------------------
  * animation color-change-4x
