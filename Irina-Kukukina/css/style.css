@@ -106,10 +106,8 @@ img {
     color: black;
     display: block;
     position: relative;
-    animation: slideInRight 2s ease 1;
 }
 .small {
-    animation: slideInLeft 3s ease 1;
     display: block;
     position: relative;
     font-size: 13px;
