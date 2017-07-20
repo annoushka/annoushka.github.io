@@ -156,12 +156,11 @@ img {
   text-align: justify;
   position: relative;
   width: 430px;
-  background-color: #fff;
+  background-color: transparent;
   display: none;
   left: 20px;
   bottom: 455px;
   z-index: 100;
-  border: 2px solid #000;
     padding: 10px;
     padding-right: 15px;
 }
