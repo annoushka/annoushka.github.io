@@ -39,7 +39,7 @@
         vertical-align: middle;
         letter-spacing: 1px;
     }
-	footer, footer a {
+    footer, footer a {
         color: #121212 !important;
     }
 }
@@ -124,7 +124,7 @@
     .center {
         font-size: 23px;
     }
-    .color-change-4x {
+    .color-change-2x {
         -webkit-animation: none;
 	        animation: none;
     }
@@ -169,10 +169,11 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-.color-change-4x {
-        -webkit-animation: color-change-4x 15s linear infinite alternate both;
-	        animation: color-change-4x 15s linear infinite alternate both;
+.color-change-2x {
+        -webkit-animation: color-change-2x 15s linear infinite alternate both;
+	        animation: color-change-2x 15s linear infinite alternate both;
     }
+
 .nav {
         display: block !important;
     }
@@ -198,17 +199,23 @@
         font-size: 48px;
     }
     .additional {
-        font-size: 14px;
+        width: 400px;
+        font-size: 12px;
+        top: -120px;
+    }
+    .h-1 {
+        font-size: 19px;
+    }
+    .e-mail {
+        text-align: right;
     }
 }
 
  /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
+@media only screen and (min-width : 1300px) {
     .additional {
-        width: 580px;
-  bottom: 480px;
-        font-size: 20px;
+        width: 450px;
+        font-size: 15px;
     }
     p {
         font-size: 20px;
@@ -216,4 +223,75 @@
     .nav li a {
     font-size: 33px;
     }
+    .h-1 {
+        font-size: 25px;
+    }
+    .right {
+    left: 0 !important;
+    }
+}
+
+
+@media only screen and (min-width : 1100px) {
+    .right {
+    left: 100px;
+    width: 310px;
+    }
+    
+}
+
+@media only screen and (min-width : 1200px) {
+    .right {
+    left: -80px;
+    }
+    
+}
+
+@media only screen and (min-width : 1500px) {
+    .right {
+        left: 80px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 1700px) {
+    .right {
+        left: 180px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 1900px) {
+    .right {
+        left: 280px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 2100px) {
+    .right {
+        left: 380px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 2300px) {
+    .right {
+        left: 480px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 2500px) {
+    .right {
+        left: 580px !important;
+    }
+    
+}
+
+@media only screen and (min-width : 2700px) {
+    .right {
+        left: 680px !important;
+    }
+    
 }
