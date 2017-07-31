@@ -1,35 +1,23 @@
 /*
  * ----------------------------------------
- * animation color-change-4x
+ * animation color-change-2x
  * ----------------------------------------
  */
-@-webkit-keyframes color-change-4x {
+@-webkit-keyframes color-change-2x {
   0% {
-    background: #ACAAC4;
-  }
-  33.3333% {
-    background: #A3B8AB;
-  }
-  66.666% {
-    background: #D6DBB6;
+    background: #EAE1D8;
   }
   100% {
-    background: #79A68A;
+    background: #CCCED7;
   }
 }
-@keyframes color-change-4x {
+@keyframes color-change-2x {
   0% {
-    background: #ACAAC4;
-  }
-  33.3333% {
-    background: #A3B8AB;
-  }
-  66.666% {
-    background: #D6DBB6;
+    background: #EAE1D8;
   }
   100% {
-    background: #79A68A;
-  }
+    background: #CCCED7;
+    }
 }
 
 
@@ -114,14 +102,20 @@ img {
     margin-top: 40px;
     text-align: left;
 }
+.tt {
+    height: 100vh;
+    width: 50vw;
+    background-color: white;
+}
+
 .left {
     margin-top: 100px;
 }
 .right {
-    -webkit-transform: translateY(190%);
-    -ms-transform: translateY(190%); 
-    -moz-transform: translateY(190%);
-    transform: translateY(190%);
+    -webkit-transform: translateY(170%);
+    -ms-transform: translateY(170%); 
+    -moz-transform: translateY(170%);
+    transform: translateY(170%);
 }
 
 .e-mail a {
@@ -147,28 +141,15 @@ img {
     cursor: default;
 }
 
-.more:hover .additional {
-    display: block;
-}
-
 .additional {
   color: #000;
-  text-align: justify;
-  position: relative;
-  width: 430px;
+  text-align: left;
+  position: absolute;
   background-color: transparent;
-  display: none;
-  left: 20px;
-  bottom: 455px;
-  z-index: 100;
+  visibility: hidden;
+  z-index: 1000;
     padding: 10px;
     padding-right: 15px;
-}
-
-.info {
-  position: absolute;
-  margin: 0 auto 0;
-  min-height: inherit;
 }
 .works {
     font-size: 19px;
@@ -219,9 +200,9 @@ img {
 .mobile-info {
     text-align: left;
 }
-.color-change-4x-mobile {
-        -webkit-animation: color-change-4x 5s linear infinite alternate both;
-	        animation: color-change-4x 5s linear infinite alternate both;
+.color-change-2x-mobile {
+        -webkit-animation: color-change-2x 5s linear infinite alternate both;
+	        animation: color-change-2x 5s linear infinite alternate both;
     }
 
 /* NAVIGATION */
