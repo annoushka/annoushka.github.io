@@ -29,28 +29,31 @@
     <![endif]-->
     <script>
         
-        window.onload=function () {
+        function cc() {
         var hv=document.getElementById("hov");
         var mn=document.getElementById("mnu");
+        var ad=document.getElementById("add");
            hv.onmouseover=function () {
             mn.style.visibility="hidden";
+            ad.style.visibility="visible";
            }
             
             hv.onmouseout=function () {
                 mn.style.visibility="visible";
+                ad.style.visibility="hidden";
             
             }
         }
-
+document.addEventListener("DOMContentLoaded", cc);
     
     </script>
 </head>
-<body class="color-change-4x">
+<body class="color-change-2x">
     
     <!-- / MOBILE NAVIGATION -->
     
     <header class="hidden-md hidden-lg">
-        <div class="mobile-header color-change-4x-mobile">
+        <div class="mobile-header color-change-2x-mobile">
         <a href="index.html">Главная</a>
       
         <div class="main_nav">
@@ -72,7 +75,6 @@
 
         </div>
     </header>
-    
     <div class="container">
     
       <!-- / MOBILE INFO SECTION -->
@@ -139,19 +141,25 @@
                
                 </div>
       </div>
-
+    </div>
+    
+    
       <!-- / DESKTOP INFO SECTION -->
-      
+    
+    
+      <div class="tt hidden-sm hidden-xs">
+          <div class="container">
          <div class="row">
-  <div class="col-md-6 col-lg-5 col-lg-offset-1">
-      <div class="left hidden-xs hidden-sm">
+             
+  <div class="col-md-5 col-lg-5 col-md-offset-1 col-lg-offset-1">
+      <div class="left">
           <img class="main-img" src="./images/photo.jpg" width="100px" alt="Кукукина Ирина Геннадьевна">
 	      
           <span class="name"><span class="h-1"><a href="index.html">Кукукина Ирина Геннадьевна</a></span><span class="small">Доктор Экономических Наук</span></span>
           <div class="pseudo"></div>
       </div>
 
-            <p class="hidden-xs hidden-sm">
+            <p>
         родилась 14 мая 1944 года в г. Иваново. Доктор экономических
 
 наук, профессор кафедры «Экономика и организация предприятия» ФГБОУ ВО
@@ -160,7 +168,28 @@
 
 работник высшего профессионального образования Российской Федерации.
                 <span class="more"> <span id="hov" style="display:block">Подробнее</span>
-                <span class="info"><span class="additional">Базовое образование – инженер-электромеханик, 1969 г.<br>С 1970 г. – ассистент кафедры
+                </span>
+        <br>
+        <br>
+      <span class="e-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:irina_kukukina@mail.ru">irina_kukukina@mail.ru</a></span>
+            </p>
+    </div>  
+            
+            <!-- / DESKTOP NAVIGATION -->
+            
+    <div class="col-md-5 col-lg-4 col-md-offset-1 col-lg-offset-2">
+        <div class="right">
+        <nav class="navbar">
+
+                <ul class="nav" id="mnu">
+                    <li><i><a href="index.html">Главная</a></i></li>
+            <li><a href="scientific-works.html" class="hover">Научные труды</a></li>
+            <li><a href="articles.html" class="hover">Публикации</a></li>
+                </ul>
+          
+            
+        </nav>
+            <span class="additional" id="add">Базовое образование – инженер-электромеханик, 1969 г.<br>С 1970 г. – ассистент кафедры
 
 Экономики и организации производства ИЭИ имени В.И. Ленина. По окончании целевой
 
@@ -182,34 +211,16 @@
 
 обращение и кредит.<br>С 2000 г. под научным руководством подготовлено 10 кандидатов
 
-экономических наук по специальностям 08.00.05 и 08.00.10.</span></span></span>
-        <br>
-        <br>
-      <span class="e-mail"><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:irina_kukukina@mail.ru">irina_kukukina@mail.ru</a></span>
-            </p>
-    </div>  
-            
-            <!-- / DESKTOP NAVIGATION -->
-            
-    <div class="col-md-4 col-md-offset-1 hidden-xs hidden-sm">
-        <div class="right">
-        <nav class="navbar">
-
-                <ul class="nav" id="mnu">
-                    <li><i><a href="index.html">Главная</a></i></li>
-            <li><a href="scientific-works.html" class="hover">Научные труды</a></li>
-            <li><a href="articles.html" class="hover">Публикации</a></li>
-                </ul>
-          
-            
-        </nav>
+экономических наук по специальностям 08.00.05 и 08.00.10.</span>
             </div>
-        </div>  
+        </div> 
     </div>
     </div>
+    </div>
+  
     
     
-<canvas id="c" class="hidden-xs" width="400" height="400"></canvas>
+<canvas id="c" class="hidden-xs hidden-sm" width="400" height="400"></canvas>
     
 <script>
 ;(function(main) {
