@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,170 +10,176 @@
     <link rel="icon" href="./img/fav.png" type="image/png">
     <link rel="shortcut icon" href="./img/fav.png" type="image/png">
     <link rel="apple-touch-icon" href="./img/fav.png" type="image/png">
+
     <link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/media.css">
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css">
-<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-   
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    
-    </head>
-    <body>
-        
-    <!-- / MOBILE NAVIGATION -->
-    
-    <header>
-        
-        <div class="mobile-header hidden-md hidden-lg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+</head>
+
+<body>
+
+<!-- / MOBILE NAVIGATION -->
+
+<header>
+    <div class="mobile-header hidden-md hidden-lg">
         <a href="how-we-work.html">how we work</a>
-      
+
         <div class="main_nav">
-            
-            <!-- start collapsed navbar-->
-            <button type="button"
-            class="navbar-toggle hidden-md hidden-lg">
+            <!-- collapsed navbar toggle -->
+            <button type="button" class="navbar-toggle hidden-md hidden-lg">
                 <i class="fa fa-bars"></i>
             </button>
-            <!-- / collapsed navbar-->
-            
-            <!-- start un-collapsed navbar-->
-                <ul class="navbar-nav">
-            <li class="listItem"><a href="index.html" class="hover">about</a></li>
-           <li class="listItem"><a href="transform.html">transform</a></li>
-            <li class="listItem"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
-            <li class="listItem"><a href="useful-links.html">the source</a></li>
-                </ul>
-            </div>
-            <!-- / un-collapsed navbar-->
 
-        </div>
-        
-        <nav class="social min-font-size hidden-lg hidden-sm hidden-xs">
-        <ul>
-            <li style="padding-left: 3rem; padding-right: 4rem"><button type="button"
-            class="info-toggle fade-in-fwd"><img src="./img/fav.png" width="100px" alt="Аннушка">
-            </button></li>
-            <li class="listItem"><a href="index.html">about</a></li>
-           <li class="listItem"><a href="how-we-work.html">how we work</a></li>
-            <li class="listItem"><a href="transform.html">transform</a></li>
-            <li class="listItem"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
-            <li class="listItem"><a href="useful-links.html">the source</a></li>
-                </ul>
-        </nav>
-        
-        <div class="desktop-nav hidden-md hidden-sm hidden-xs">
-        <ul>
-            <li class="listItem"><a href="index.html">about</a></li>
-            <li class="listItem"><a href="transform.html">transform</a></li>
-        
-                <li class="listItem transform-right-first"><a href="useful-links.html">the source</a></li>
-                <li class="listItem transform-right"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
-           
+            <!-- collapsed navbar content -->
+            <ul class="navbar-nav">
+                <li class="listItem"><a href="index.html" class="hover">about</a></li>
+                <li class="listItem"><a href="transform.html">transform</a></li>
+                <li class="listItem"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
+                <li class="listItem"><a href="useful-links.html">the source</a></li>
             </ul>
-                 </div>
-        
-    </header>
-        
-    <div class="container">
-        <div class="row">
-        <div class="centerer main-button-margin hidden-md col-md-12">
-          <button type="button"
-            class="info-toggle fade-in-fwd"><img src="./img/fav.png" width="100px" alt="anja">
+        </div>
+
+        <nav class="social min-font-size hidden-lg hidden-sm hidden-xs">
+            <ul>
+                <li style="padding-left: 3rem; padding-right: 4rem">
+                    <button type="button" class="info-toggle fade-in-fwd">
+                        <img src="./img/fav.png" width="100px" alt="Аннушка">
+                    </button>
+                </li>
+                <li class="listItem"><a href="index.html">about</a></li>
+                <li class="listItem"><a href="how-we-work.html">how we work</a></li>
+                <li class="listItem"><a href="transform.html">transform</a></li>
+                <li class="listItem"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
+                <li class="listItem"><a href="useful-links.html">the source</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Desktop nav: visible on md and lg -->
+    <div class="desktop-nav hidden-sm hidden-xs">
+        <ul>
+            <li class="listItem"><a href="index.html">about</a></li>
+            <li class="listItem"><a href="transform.html">transform</a></li>
+            <li class="listItem transform-right-first"><a href="useful-links.html">the source</a></li>
+            <li class="listItem transform-right"><a href="https://www.instagram.com/anjahwc/">instagram</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- Intro button + hidden info -->
+    <div class="row">
+        <div class="centerer main-button-margin col-md-12">
+            <button type="button" class="info-toggle fade-in-fwd">
+                <img src="./img/fav.png" width="100px" alt="anja">
             </button>
-      </div>
         </div>
-             <div class="row">
-             <div class="info-hidden center col-md-12">
-	      <p> 
-              finding solutions for any budget in the process. being in an optimal place physically and psychologically is a sound investment, by the way 
-      </p>
-            </div>
+    </div>
+
+    <div class="row">
+        <div class="info-hidden center col-md-12">
+            <p>
+                finding solutions for any budget in the process. being in an optimal place
+                physically and psychologically is a sound investment, by the way
+            </p>
         </div>
-        
-        <div class="first-row center row">
-            <p><strong>how coaching works — schedule, prices, etc.</strong>
-</p>
-<p>first, we can text or have a free call (around 20min) in order to understand if we can work together
-    <br>
-<br>
-second step is paperwork and payment - you need to fill out some questionnaires, sign an agreement, confirm schedule
-    <br>
-<br>
-next we do an intake session (60min - slightly longer than follow-up sessions) where we really get to know each other
-    <br>
-<br>   
- <br>
-<br>
-</p>
-</div>
-<div class="row fade-in">
-<p>
+    </div>
+
+    <!-- Hero / title block -->
+    <div class="row fade-in">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p style="text-align: center; padding-top: 50px;">
+                <strong>how coaching works — schedule, prices, etc.</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="row fade-in">
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p>
+                first, we can text or have a free call (around 20min) in order to understand if we can work together
+                <br><br>
+                second step is paperwork and payment - you need to fill out some questionnaires, sign an agreement, confirm schedule
+                <br><br>
+                next we do an intake session (60min - slightly longer than follow-up sessions) where we really get to know each other
+                <br><br>
+            </p>
+ <p style="text-align: center;">
 PRICES
-<br>
-consultation (60 minutes): 100 USD
-<br>
-3-month package: 400 USD
-<br>
-6-month package: 650 USD
-<br>
-<br>
-<br>
-<br>
-</p>
-</div>
-<div class="row fade-in">
-<p>
-what’s inside the package 
-<br>
-<br>
-2 sessions per month (50 minutes each) 
-<br>
-plus messaging support
-<br>
-or
-<br>
-4 sessions per month (25 minutes each) 
-<br>
-plus messaging support
-<br>
-— you get to choose
-<br>
-<br>
-*I accept paypal/crypto/SWIFT
 </p>
         </div>
-        
-       
-    <!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<![endif]-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-	<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-	<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-	<script src="js/common.js"></script>
-    <script src="libs/respond/respond.min.js"></script>
-    
+    </div>
+
+    <!-- Prices -->
+    <div class="row fade-in">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p style="text-align: center;">
+                consultation (60 minutes): 100 USD
+                <br>
+                3-month package: 400 USD
+                <br>
+                6-month package: 650 USD
+                <br><br><br><br>
+            </p>
+        </div>
+    </div>
+
+    <!-- What’s inside the package -->
+    <div class="row fade-in">
+        <div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-12">
+            <p style="text-align: center;">
+                what’s inside the package
+                <br><br>
+                2 sessions per month (50 minutes each)
+                <br>
+                plus messaging support
+                <br>
+                or
+                <br>
+                4 sessions per month (25 minutes each)
+                <br>
+                plus messaging support
+                <br>
+                — you get to choose
+                <br><br>
+                *I accept paypal/crypto/SWIFT
+            </p>
+        </div>
+    </div>
+
+</div> <!-- / .container -->
+
+<!-- Footer -->
+<footer>
+    <div>
+        <ul class="forms min-font-size">
+            <li><a href="https://" target="_blank">inquiry form</a></li>
+            <li><a href="https://" target="_blank">feedback form</a></li>
+            <li><a href="https://" target="_blank">coaching fit form</a></li>
+        </ul>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+<script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
+<script src="libs/scrollto/jquery.scrollTo.min.js"></script>
+<script src="js/common.js"></script>
+<script src="libs/respond/respond.min.js"></script>
+
 </body>
-    <footer>
-                <div>
-                    <ul class="forms min-font-size">
-                        <li><a href="https://" target="_blank">inquiry form</a></li>
-                        <li><a href="https://" target="_blank">feedback form</a></li>
-			<li><a href="https://" target="_blank">coaching fit form</a></li>
-                        
-      </ul>
-          </div>
-        
-    </footer>
 </html>
