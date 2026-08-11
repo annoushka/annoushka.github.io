@@ -159,6 +159,9 @@ video {
 .item4 {
     grid-column: span 2;
     grid-row: span 1;
+max-width: 420px;
+margin-top: 50px;
+margin-left: 50px;
 }
 .item4 .text {
     font-size: 13px;
@@ -444,3 +447,4 @@ p a {
     line-height: 50px;
     letter-spacing: 0.05;
 }
+
