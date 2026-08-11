@@ -97,15 +97,6 @@
         </div>
     </div>
 
-    <!-- Hero / title block -->
-    <div class="row fade-in">
-        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
-            <p style="text-align: center; padding-top: 50px;">
-                <strong>how coaching works — schedule, prices, etc.</strong>
-            </p>
-        </div>
-    </div>
-
     <!-- How it works -->
     <div class="row fade-in">
         <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
@@ -159,7 +150,125 @@ PRICES
             </p>
         </div>
     </div>
+<div class="canvas">
+<canvas id="sun" width="150" height="150"></canvas>
+<script>
+  (function () {
+    // Change this ID if your canvas has a different id
+    const canvas = document.getElementById('sun');
+    if (!canvas) return;
 
+    const ctx = canvas.getContext('2d');
+
+    // Optional: high-DPI scaling (remove if you don't want it)
+    const scale = 1.5;
+    const cssWidth = canvas.width;
+    const cssHeight = canvas.height;
+    canvas.width *= scale;
+    canvas.height *= scale;
+    ctx.scale(scale, scale);
+
+    const W = cssWidth;
+    const H = cssHeight;
+    const CX = W / 2;
+    const CY = H / 2;
+
+    // Sun parameters
+    const sunRadius = 15;
+    const rayCount = 50;
+    const rayInner = sunRadius;
+    const rayOuter = sunRadius + 55;
+
+    // Build paths: first the circle, then each ray as a separate path
+    const paths = [];
+
+    // Circle path (fine line)
+    const circlePath = [];
+    const circleSteps = 120;
+    for (let i = 0; i <= circleSteps; i++) {
+      const t = (i / circleSteps) * Math.PI * 2;
+      circlePath.push({
+        x: CX + sunRadius * Math.cos(t),
+        y: CY + sunRadius * Math.sin(t)
+      });
+    }
+    paths.push(circlePath);
+
+    // Rays
+    for (let r = 0; r < rayCount; r++) {
+      const angle = (r / rayCount) * Math.PI * 2;
+      const x1 = CX + rayInner * Math.cos(angle);
+      const y1 = CY + rayInner * Math.sin(angle);
+      const x2 = CX + rayOuter * Math.cos(angle);
+      const y2 = CY + rayOuter * Math.sin(angle);
+
+      paths.push([
+        { x: x1, y: y1 },
+        { x: x2, y: y2 }
+      ]);
+    }
+
+    // Animation state
+    let currentPathIndex = 0;
+    let currentPointIndex = 0;
+    let lastX = null;
+    let lastY = null;
+
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = 1.2; // fine line
+    ctx.strokeStyle = '#111';
+
+    function drawNextSegment() {
+  if (currentPathIndex >= paths.length) {
+    return; // done
+  }
+
+  const path = paths[currentPathIndex];
+  if (currentPointIndex === 0) {
+    // start new path
+    lastX = path[0].x;
+    lastY = path[0].y;
+    currentPointIndex = 1;
+    setTimeout(() => requestAnimationFrame(drawNextSegment), 0);
+    return;
+  }
+
+  if (currentPointIndex >= path.length) {
+    // move to next path
+    currentPathIndex++;
+    currentPointIndex = 0;
+    lastX = null;
+    lastY = null;
+    setTimeout(() => requestAnimationFrame(drawNextSegment), 0);
+    return;
+  }
+
+  const p = path[currentPointIndex];
+  ctx.beginPath();
+  ctx.moveTo(lastX, lastY);
+  ctx.lineTo(p.x, p.y);
+  ctx.stroke();
+
+  lastX = p.x;
+  lastY = p.y;
+  currentPointIndex++;
+
+  // Adjust this value to control speed:
+  const delayMs = 80; // try 20, 40, 80, 120, etc.
+  setTimeout(() => requestAnimationFrame(drawNextSegment), delayMs);
+}
+
+
+    // Optional: clear canvas before drawing
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, W, H);
+
+    // Start animation
+    drawNextSegment();
+  })();
+</script>
+</div>
 </div> <!-- / .container -->
 
 <!-- Footer -->
