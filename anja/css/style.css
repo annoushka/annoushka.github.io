@@ -112,6 +112,9 @@ video {
     background-color: white;
     display: none;
 }
+.main-content {
+    margin-top: 50px;
+}
 .text {
     font-family: 'Montserrat';
     font-size: 16px;
@@ -217,6 +220,34 @@ video {
 }
 
 /* NAVIGATION */
+/* Mobile navigation font fixes */
+
+@media (max-width: 991px) {
+    /* Top mobile bar */
+    .mobile-header {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 16px !important;
+        line-height: 40px !important;
+    }
+
+    /* Collapsed menu links */
+    .main_nav .navbar-nav .listItem a {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 16px !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Social nav on very small screens */
+    .social.min-font-size {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+    }
+
+    .social.min-font-size .listItem a {
+        font-family: 'Montserrat', sans-serif !important;
+        font-size: 15px !important;
+    }
+}
 
 .desktop-nav {
     padding: 2.5rem 3rem 1.8rem 3rem;
@@ -224,13 +255,21 @@ video {
     letter-spacing: 0.04rem;
     text-transform: uppercase;
     float: right;
-    font-family: 'Lora', serif !important;
+    font-family: 'Montserrat';
 }
 .desktop-nav li {
     display: inline-block;
 }
+/* Ensure desktop nav is visible on medium and large screens */
+
+@media (min-width: 992px) {
+    .desktop-nav {
+        display: block !important;
+    }
+}
 .transform-right-first {
     position: absolute;
+	padding-top: 20px !important;
     padding-right: 30px !important;
     right: 3.2rem;
     -webkit-transform-origin: 100% 100% 0;
@@ -241,6 +280,7 @@ video {
 }
 .transform-right {
     position: absolute;
+padding-top: 20px !important;
     right: 3.2rem;
     -webkit-transform-origin: 100% 100% 0;
     transform-origin: 100% 100% 0;
@@ -254,7 +294,7 @@ nav {
     top: 0;
     width: 100%;
     text-transform: uppercase;
-    font-family: 'Lora', serif !important;
+    font-family: 'Montserrat' !important;
 }
 
 .mobile-header {
@@ -271,7 +311,7 @@ nav {
     line-height: 40px;
     background-color: white;
     border-bottom: 1px solid black;
-    font-family: 'Lora', serif !important;
+    font-family: 'Montserrat' !important;
 }
 .mobile-header>a {
     display: inline-block; 
@@ -386,7 +426,7 @@ html, body {
     background-color: #D7C79C;
 }
 p {
-    font-family: 'Montserrat', serif !important;
+    font-family: 'Montserrat';
 }
 p a {
     text-decoration: underline;
