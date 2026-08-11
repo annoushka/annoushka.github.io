@@ -161,7 +161,7 @@ video {
     grid-row: span 1;
 max-width: 420px;
 margin-top: 50px;
-margin-left: 50px;
+margin-left: 80px;
 }
 .item4 .text {
     font-size: 13px;
@@ -202,24 +202,10 @@ margin-left: 50px;
 .item a:hover {
     color: white !important;
 }
-.green {
-    padding: 2.5rem 3rem 1.8rem 3rem;
-    width: 100%;
-    background-color: #1B2D2D;
-}
-.brown {
-    padding: 2.5rem 3rem 1.8rem 3rem;
-    width: 100%;
-    background-color: ##552600;
-}
-.dark brown {
-    padding: 2.5rem 3rem 1.8rem 3rem;
-    width: 100%;
-    background-color: ##301007;
-    color: white;
-}
-.purple a {
-    color: white !important;
+.canvas {
+    display: flex;
+justify-content: center !important;
+margin-top: 60px;
 }
 
 /* NAVIGATION */
@@ -447,4 +433,5 @@ p a {
     line-height: 50px;
     letter-spacing: 0.05;
 }
+
 
