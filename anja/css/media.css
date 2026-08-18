@@ -1,0 +1,261 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+p {
+        font-size: 15px;
+    }
+    .item1 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.item2 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+    .item4 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+    .item4 .text {
+    font-size: 14px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .main_nav {
+	padding-top: 0;
+    }
+    .navbar-nav {
+        display: none;
+        background-color: white;
+        position: absolute;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        height: 100vh !important;
+        z-index: 3000;
+        padding-top: 50px;
+    }
+  
+    .navbar-nav li {
+        display: block !important;
+        padding: 15px;
+        text-align: center;
+        vertical-align: middle;
+    }
+     .navbar-nav li a {
+        vertical-align: middle;
+        letter-spacing: 1px;
+         font-size: 60px;
+         font-family: 'Lora', serif !important;
+    }
+    .small {
+        font-size: 16px;
+    }
+    .item1 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.item2 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.item3 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.item5 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+.item6 {
+    grid-column: span 6;
+    grid-row: span 1;
+}
+    .margin-top {
+        margin-top: 30px;  
+    }
+    .info {
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: transparent !important;
+    }
+    .text {
+        letter-spacing: normal;
+    }
+    .info-toggle {
+        padding-top: 90px;
+    }
+    .info-hidden {
+    padding-top: 20px;
+    padding-bottom: 1.5rem;
+    margin-top: 20px;
+    }
+.listItem a:link:after,
+.listItem a:visited:after,
+.listItemWhite a:link:after,
+.listItemWhite a:visited:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0.7em !important;
+  right: 0;
+  width: 0%;
+  height: 3px;
+  content: "";
+  color: transparent;
+  transition: all 200ms ease-in;
+}
+    .main {
+        margin: 10px 0 30px;
+        padding-bottom: 5px;
+        text-align: center;
+        display: block;
+        grid-column-start: 3;
+        grid-column-end: 5;
+        border-bottom: 1px solid black;
+        z-index: 1;
+    }
+    .title {
+        background-color: white;
+        padding: 0px 5px;
+        text-align: left;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .text {
+        top: 5%;
+        left: 5%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    p {
+        font-size: 14px;
+    }
+    .max-font-size {
+        font-size: 30px;
+    }
+   .item7 {
+    grid-column: span 6;
+    grid-row: span 1;
+    }
+    .item8 {
+    grid-column: span 6;
+    grid-row: span 1;
+    }
+    .title {
+        font-size: 13px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .mobile-header {
+    font-size: 15px;
+    }
+    .navbar-nav li a {
+         font-size: 40px;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .social li {
+    display: block;
+    padding-right: 0px;
+    padding-bottom: 7px;
+}
+    .listItem a:link:after,
+.listItem a:visited:after,
+.listItemWhite a:link:after,
+.listItemWhite a:visited:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0.7em !important;
+  right: 0;
+  width: 0%;
+  height: 2px;
+  content: "";
+  color: transparent;
+  transition: all 200ms ease-in;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+     .navbar-nav {
+        display: none;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+     .navbar-nav {
+        display: none;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .main-button-margin {
+        margin-top: -4rem;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+
+@media only screen and (min-width : 1300px) {
+    .main-button-margin {
+        margin-top: -4rem;
+    }
+}
+
+@media only screen and (min-width : 2115px) {
+    .main-button-margin {
+        margin-top: 25px;
+    }
+    }
+
+@media only screen and (min-width : 2300px) {
+    .listItem a:link:after,
+.listItem a:visited:after,
+.listItemWhite a:link:after,
+.listItemWhite a:visited:after {
+  top: 0.8em !important;
+}
+   .transform-right-first {
+    -webkit-transform-origin: 100% 100% 0;
+    transform-origin: 100% 100% 0;
+    -webkit-transform: rotate(90deg) translate(8rem,0);
+    transform: rotate(90deg) translate(8rem,0);
+}
+.transform-right {
+    -webkit-transform-origin: 100% 100% 0;
+    transform-origin: 100% 100% 0;
+    -webkit-transform: rotate(90deg) translate(17rem,0);
+    transform: rotate(90deg) translate(17rem,0);
+} 
+}
+
